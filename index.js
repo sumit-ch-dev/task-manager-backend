@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(cors())
 
-const connectDB = require('./db')
-connectDB()
+// const connectDB = require('./db')
+// connectDB()
 
 app.post('/attachments', upload.array('files'), async (req, res) => {
     try {
